@@ -7,9 +7,9 @@ const NavTabs = () => {
       <div className="nav-container">
         <div className="app-name">Tv-Panel</div>
         <div className="right-nav">
-          <div>Current Shows</div>
-          <div>Coming Soon</div>
-          <div>About</div>
+          <div className="nav-text">Current Shows</div>
+          <div className="nav-text">Coming Soon</div>
+          <div className="nav-text">Sign In</div>
         </div>
       </div>
     </div>

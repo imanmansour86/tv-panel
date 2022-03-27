@@ -11,15 +11,24 @@
 
 .nav {
   height: 10%;
-  background-color: #007ea7;
+  background-color: #00171f;
+  position: sticky;
 }
 .right-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 25%;
+  cursor: pointer;
 }
 
+.nav-text,
+.app-name {
+  color: white;
+}
+.nav-text:hover {
+  color: #007ea7;
+}
 .app-name,
 .right-nav {
   font-size: 18px;
