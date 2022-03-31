@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./styles.css";
 
 const Landing = () => {
-  const [shows, setShows] = useState();
+  const [shows, setShows] = useState([]);
+  const [randomIndex, setRandomIndex] = useState();
 
   //fetch data when component is loaded
 
@@ -13,8 +14,17 @@ const Landing = () => {
       .catch((error) => console.error(error));
   }, []);
 
+  useEffect(() => {
+    const randomShowIndex = Math.floor(Math.random() * shows.length);
+    setRandomIndex(randomShowIndex);
+  }, [shows]);
+
   return (
     <div className="landing">
+      <div>
+        random
+        {randomIndex && <img src={`/assets/${shows[randomIndex].image}`} />}
+      </div>
       <div className="video">
         {shows.map((show) => (
           <div>{show.name}</div>

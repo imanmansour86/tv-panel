@@ -4,23 +4,23 @@ const showData = [
   {
     name: "Ted Lasso",
     description: "Very funny show",
-    image: "test",
+    image: "tedlasso.jpeg",
   },
   {
     name: "Masha and the Bear",
     description: "Very funny show",
-    image: "test",
+    image: "masha.jpeg",
   },
   {
     name: "Friends",
     description: "Very funny show",
-    image: "test",
+    image: "friends.jpeg",
   },
 
   {
     name: "Tom and Jerry",
     description: "Very funny show",
-    image: "test",
+    image: "tom.jpeg",
   },
 ];
 
