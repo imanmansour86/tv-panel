@@ -21,9 +21,13 @@ const Landing = () => {
 
   return (
     <div className="landing">
-      <div>
-        random
-        {randomIndex && <img src={`/assets/${shows[randomIndex].image}`} />}
+      <div className="full-image">
+        {randomIndex !== undefined && shows.length > 0 && (
+          <img
+            className="main-img"
+            src={`/assets/${shows[randomIndex].image}`}
+          />
+        )}
       </div>
       <div className="video">
         {shows.map((show) => (

@@ -3,3 +3,9 @@
 
   height: 30%;
 } */
+
+.full-image,
+.landing,
+.main-img {
+  width: 100%;
+}

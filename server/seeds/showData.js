@@ -4,7 +4,7 @@ const showData = [
   {
     name: "Ted Lasso",
     description: "Very funny show",
-    image: "tedlasso.jpeg",
+    image: "ted.jpeg",
   },
   {
     name: "Masha and the Bear",
