@@ -28,6 +28,7 @@ const Landing = () => {
             src={`/assets/${shows[randomIndex].image}`}
           />
         )}
+        <h2 className="show-title-main">My Cool Shows</h2>
       </div>
       <div className="video">
         {shows.map((show) => (
