@@ -39,6 +39,17 @@
   top: 0;
 }
 
+.sign-in {
+  background-color: #06f;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  min-height: 25px;
+  min-width: 100px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   .app-name,
   .right-nav {
