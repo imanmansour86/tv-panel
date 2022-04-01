@@ -31,55 +31,118 @@ const Landing = () => {
         )}
         <h1 className="show-title-main">All Original Shows</h1>
         <h2 className="show-title-sub">
-          Exclusively on tvPanel.Watch every Sunday
+          Exclusively on tvPanel.Tune on Sunday
         </h2>
       </div>
-      <div className="landing-win">
-        <h2>Tom and Jerry: Oscar Winner-Best Picture</h2>
-        <div>
-          <InfiniteCarousel
-            breakpoints={[
-              {
-                breakpoint: 500,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
+
+      <div className="landing-main">
+        <div className="section">
+          <h2 className="main-title">
+            Tom and Jerry: Oscar Winner-Best Picture
+          </h2>
+          <h3 className="subtitle">Tom and Jerry: Oscar Winner-Best Picture</h3>
+          {randomIndex !== undefined && shows.length > 0 && (
+            <InfiniteCarousel
+              breakpoints={[
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                  },
                 },
-              },
-              {
-                breakpoint: 768,
-                settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 3,
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                  },
                 },
-              },
-            ]}
-            dots={true}
-            showSides={true}
-            sidesOpacity={0.5}
-            sideSize={0.1}
-            slidesToScroll={4}
-            slidesToShow={4}
-            scrollOnDevice={true}
-          >
-            <div>
-              <img alt="" src={`/assets/${shows[randomIndex].image}`} />
-            </div>
-            <div>
-              <img alt="" src={`/assets/${shows[randomIndex].image}`} />
-            </div>
-            <div>
-              <img alt="" src={`/assets/${shows[randomIndex].image}`} />
-            </div>
-            <div>
-              <img alt="" src={`/assets/${shows[randomIndex].image}`} />
-            </div>
-            <div>
-              <img alt="" src={`/assets/${shows[randomIndex].image}`} />
-            </div>
-          </InfiniteCarousel>
+              ]}
+              dots={true}
+              showSides={true}
+              sidesOpacity={0.5}
+              sideSize={0.1}
+              slidesToScroll={4}
+              slidesToShow={4}
+              scrollOnDevice={true}
+            >
+              <div>
+                <img
+                  className="section-img"
+                  alt=""
+                  src={`/assets/${shows[2].image}`}
+                />
+              </div>
+              <div>
+                <img
+                  className="section-img"
+                  alt=""
+                  src={`/assets/${shows[2].image}`}
+                />
+              </div>
+              <div>
+                <img
+                  className="section-img"
+                  alt=""
+                  src={`/assets/${shows[2].image}`}
+                />
+              </div>
+              <div>
+                <img
+                  className="section-img"
+                  alt=""
+                  src={`/assets/${shows[2].image}`}
+                />
+              </div>
+              <div></div>
+            </InfiniteCarousel>
+          )}
+        </div>
+
+        <div className="section">
+          <h2 className="main-title">Watch Entire Seasons</h2>
+
+          {shows.length > 0 && (
+            <InfiniteCarousel
+              breakpoints={[
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                  },
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                  },
+                },
+              ]}
+              dots={true}
+              showSides={true}
+              sidesOpacity={0.5}
+              sideSize={0.1}
+              slidesToScroll={4}
+              slidesToShow={4}
+              scrollOnDevice={true}
+            >
+              {shows.map((show) => (
+                <div>
+                  <img
+                    className="section-img"
+                    alt="show-images"
+                    src={`/assets/${show.image}`}
+                  />
+                </div>
+              ))}
+            </InfiniteCarousel>
+          )}
         </div>
       </div>
+
       <div className="video">
         {shows.map((show) => (
           <div>{show.name}</div>

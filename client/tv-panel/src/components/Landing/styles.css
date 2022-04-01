@@ -29,6 +29,26 @@
   position: relative;
 }
 
+.landing-main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+.main-title {
+  line-height: 0.1;
+  padding-top: 2%;
+  font-size: 1.5rem;
+}
+
+.section-img {
+  width: 200px;
+  height: 150px;
+}
 @media only screen and (max-width: 768px) {
   .show-title-sub {
     font-size: 15px;
@@ -36,5 +56,25 @@
 
   .show-title-main {
     font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .main-title {
+    font-size: 1.4rem;
+  }
+
+  .show-title-main {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .show-title-sub {
+    top: 86%;
+    left: 50%;
+    transform: translate(-38%, -50%);
   }
 }
