@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import InfiniteCarousel from "react-leaf-carousel";
 import "./styles.css";
 
 const Landing = () => {
@@ -28,7 +29,56 @@ const Landing = () => {
             src={`/assets/${shows[randomIndex].image}`}
           />
         )}
-        <h2 className="show-title-main">My Cool Shows</h2>
+        <h1 className="show-title-main">All Original Shows</h1>
+        <h2 className="show-title-sub">
+          Exclusively on tvPanel.Watch every Sunday
+        </h2>
+      </div>
+      <div className="landing-win">
+        <h2>Tom and Jerry: Oscar Winner-Best Picture</h2>
+        <div>
+          <InfiniteCarousel
+            breakpoints={[
+              {
+                breakpoint: 500,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                },
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                },
+              },
+            ]}
+            dots={true}
+            showSides={true}
+            sidesOpacity={0.5}
+            sideSize={0.1}
+            slidesToScroll={4}
+            slidesToShow={4}
+            scrollOnDevice={true}
+          >
+            <div>
+              <img alt="" src={`/assets/${shows[randomIndex].image}`} />
+            </div>
+            <div>
+              <img alt="" src={`/assets/${shows[randomIndex].image}`} />
+            </div>
+            <div>
+              <img alt="" src={`/assets/${shows[randomIndex].image}`} />
+            </div>
+            <div>
+              <img alt="" src={`/assets/${shows[randomIndex].image}`} />
+            </div>
+            <div>
+              <img alt="" src={`/assets/${shows[randomIndex].image}`} />
+            </div>
+          </InfiniteCarousel>
+        </div>
       </div>
       <div className="video">
         {shows.map((show) => (

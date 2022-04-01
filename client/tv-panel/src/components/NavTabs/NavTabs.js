@@ -3,9 +3,9 @@ import "./styles.css";
 
 const NavTabs = () => {
   return (
-    <div className="nav">
-      <div className="nav-container">
-        <div className="app-name">Tv-Panel</div>
+    <div className="nav ">
+      <div className=" nav-container">
+        <div className="app-name">tvPanel</div>
         <div className="right-nav">
           <div className="nav-text">Current Shows</div>
           <div className="nav-text">Coming Soon</div>
