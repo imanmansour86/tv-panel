@@ -51,16 +51,6 @@
   margin-top: 10px;
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solod black;
-  background: white;
-  overflow: auto;
-}
-
 @media only screen and (max-width: 768px) {
   .app-name,
   .right-nav {
