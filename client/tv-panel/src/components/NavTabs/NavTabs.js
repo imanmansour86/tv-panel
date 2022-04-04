@@ -9,9 +9,13 @@ const NavTabs = () => {
   const openModal = () => {
     setShowModal(true);
   };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
   return (
     <div className="nav ">
-      {showModal && <SignIn />}
+      {showModal && <SignIn closeModal={closeModal} />}
       <div className=" nav-container">
         <div className="app-name">tvPanel</div>
         <div className="right-nav">
