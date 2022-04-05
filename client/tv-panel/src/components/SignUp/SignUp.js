@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import "./styles.css";
-import { FaRegTimesCircle } from "react-icons/fa";
-import Landing from "../Landing/Landing";
-import NavTabs from "../NavTabs/NavTabs";
-import SignUp from "../SignUp/SignUp";
 
-const SignIn = ({ closeModal }) => {
+const SignUp = () => {
   return (
     <div>
-      <div className="header">Sign in with your account</div>
+      <div className="header">Create new user </div>
       <div className="header-sub">Enter credentials below</div>
       <div className="sign-in-inputs">
         <input
@@ -22,6 +18,15 @@ const SignIn = ({ closeModal }) => {
         ></input>
         <input
           className="sign-input"
+          type="text"
+          name="email"
+          autoComplete="off"
+          autoCapitalize="off"
+          required={true}
+          placeholder="Email"
+        ></input>
+        <input
+          className="sign-input"
           type="password"
           name="password"
           autoComplete="off"
@@ -30,8 +35,11 @@ const SignIn = ({ closeModal }) => {
           placeholder="Password"
         ></input>
       </div>
+      <div className="footer">
+        <a>Create user</a>
+      </div>
     </div>
   );
 };
 
-export default SignIn;
+export default SignUp;

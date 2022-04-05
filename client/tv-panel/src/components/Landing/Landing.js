@@ -130,7 +130,7 @@ const Landing = () => {
               scrollOnDevice={true}
             >
               {shows.map((show) => (
-                <div>
+                <div key={show.id}>
                   <img
                     className="section-img"
                     alt="show-images"
@@ -145,7 +145,7 @@ const Landing = () => {
 
       <div className="video">
         {shows.map((show) => (
-          <div>{show.name}</div>
+          <div key={show.id}>{show.name}</div>
         ))}
         {/* <video
           src={`/assets/video.mp4`}

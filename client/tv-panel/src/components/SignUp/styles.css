@@ -1,0 +1,67 @@
+.modal {
+  width: 48%;
+  height: 60vh;
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background: white;
+  overflow: auto;
+}
+
+.header {
+  text-align: center;
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 1.4rem;
+  margin-top: 9%;
+}
+
+.header-sub {
+  text-align: center;
+  font-weight: 400;
+  color: #1d1d1f;
+  font-size: 1.2rem;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.sign-in-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.sign-input {
+  width: 100%;
+  padding: 12px 20px;
+
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  /* border-radius: 6px; */
+}
+
+.footer {
+  margin-top: 10%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #06c;
+}
+
+.close {
+  margin-top: 2%;
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .modal {
+    width: 100%;
+    height: 100vh;
+  }
+}

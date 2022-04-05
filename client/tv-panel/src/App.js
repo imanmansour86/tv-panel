@@ -7,7 +7,9 @@ function App() {
   return (
     <Router>
       <NavTabs />
-      <Landing />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+      </Routes>
     </Router>
   );
 }

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 import { FaUser } from "react-icons/fa";
 import SignIn from "../SignIn/SignIn";
-
+import Modal from "../Modal/Modal";
 const NavTabs = () => {
   const [showModal, setShowModal] = useState(false);
 
@@ -15,7 +15,7 @@ const NavTabs = () => {
   };
   return (
     <div className="nav ">
-      {showModal && <SignIn closeModal={closeModal} />}
+      {showModal && <Modal closeModal={closeModal} />}
       <div className=" nav-container">
         <div className="app-name">tvPanel</div>
         <div className="right-nav">
